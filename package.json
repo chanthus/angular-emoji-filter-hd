@@ -4,7 +4,7 @@
     "email": "chanthutshamsu@gmail.com"
   },
   "name": "angular-cts-emoji-filter-hd",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "An AngularJS filter for replacing emoji codes with high-definition emoticons (Retina friendly).",
   "devDependencies": {
     "gulp": "^3.8.10",
