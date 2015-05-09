@@ -1,7 +1,4 @@
-node_modules
+node_modules/
 .DS_Store
-dist/angular-emoji-hd.zip
-/bower_components
-lib/emoji.css
-.sass-cache
+bower_components/
 .idea/

@@ -10,30 +10,30 @@ var gulp = require('gulp'),
 
 gulp.task('copy-images', function () {
     gulp.src(['lib/**/*.png'])
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('compile-sass', function () {
     gulp.src(['lib/scss/emoji.scss'])
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('dist/'));
 
     gulp.src(['lib/scss/emoji.scss'])
         .pipe(sass())
         .pipe(uglifycss())
         .pipe(rename('emoji.min.css'))
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('compile-js', function () {
     gulp.src(['lib/emoji.js'])
         .pipe(ngAnnotate())
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('dist/'));
 
     gulp.src(['lib/emoji.js'])
         .pipe(ngAnnotate())
         .pipe(uglify())
         .pipe(rename('emoji.min.js'))
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('clean', function () {

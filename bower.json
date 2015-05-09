@@ -1,6 +1,6 @@
 {
   "name": "angular-cts-emoji-filter-hd",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "https://github.com/chanthus/angular-emoji-filter-hd",
   "authors": [
     "Chanthu <chanthutshamsu@gmail.com>"
@@ -16,7 +16,6 @@
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
     "node_modules",
     "bower_components",
     "test"
