@@ -10,13 +10,7 @@ This module is available via NPM or bower, install it with this command:
 Via bower
 
 ```bash
-bower install git://github.com/dbaq/angular-emoji-filter-hd.git
-```
-
-Via NPM
-
-```bash
-npm install angular-emoji-filter-hd
+bower install https://github.com/chanthus/angular-emoji-filter-hd.git
 ```
 
 Demo
@@ -25,7 +19,7 @@ See this [plunker](http://embed.plnkr.co/Woxf3rQuLiYWhh7ccvak/preview)
 
 Usage
 --
-- Add dbaq.emoji as a dependency
+- Add cts.emoji as a dependency
 - Add ngSanitize as a dependency (belongs to AngularJS)
 - Apply the filter within ng-bind-html: ```<div ng-bind-html="message | emoji"></div>```
 
@@ -47,7 +41,7 @@ Example
 ```
  
 ```js
-angular.module("app", ["dbaq.emoji","ngSanitize"]).controller("AppCtrl", function ($scope) {
+angular.module("app", ["cts.emoji","ngSanitize"]).controller("AppCtrl", function ($scope) {
     $scope.message = "Animals: :dog: :cat: :snake: People: :smile: :confused: :angry: Places: :house: :school: :hotel: :poop:";
 });
 ```
@@ -57,4 +51,4 @@ License
 --
 The AngularJS Emoji filter HD is released under the MIT license as detailed in the LICENSE file that should be distributed with this library; the source code is [freely available](http://github.com/globaldev/angular-emoji-filter).
 
-The filter was adapted by Didier Baquier from the work of [James Allardice](http://jamesallardice.com). The resources come from [emoji codes website](http://www.emoji-cheat-sheet.com)
+The filter was adapted by Didier Baquier from the work of [dbaq](https://github.com/dbaq/angular-emoji-filter-hd). The resources come from [emoji codes website](http://www.emoji-cheat-sheet.com)
