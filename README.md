@@ -51,4 +51,4 @@ License
 --
 The AngularJS Emoji filter HD is released under the MIT license as detailed in the LICENSE file that should be distributed with this library; the source code is [freely available](http://github.com/globaldev/angular-emoji-filter).
 
-The filter was adapted by Didier Baquier from the work of [dbaq](https://github.com/dbaq/angular-emoji-filter-hd). The resources come from [emoji codes website](http://www.emoji-cheat-sheet.com)
+The filter was adapted by me from the work of [dbaq](https://github.com/dbaq/angular-emoji-filter-hd). The resources come from [emoji codes website](http://www.emoji-cheat-sheet.com)
