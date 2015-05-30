@@ -32,7 +32,7 @@
 
                     cssData = cssData.replace(/64px/g, size + 'px');
                     cssData = cssData.replace(/2240px/g, totalSize + 'px');
-
+                    
                     angular.forEach(emojisMap, function (emojiDetails) {
 
                         var emojiKey = escapeRegExp(emojiDetails.short_name);
