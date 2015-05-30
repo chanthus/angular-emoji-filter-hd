@@ -21,7 +21,7 @@
                     var cssMap = '';
                     var emojiMap = {};
                     var codesMap = {};
-                    var categoryMap = {};
+                    var categoryMap = {'People': []};
                     var emojiReplaceStatement = '';
 
                     var moduleName = 'cts.emoji';
