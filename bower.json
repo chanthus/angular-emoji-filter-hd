@@ -20,8 +20,12 @@
     "bower_components",
     "test"
   ],
+  "dependencies": {
+    "angular": "~1.x"
+  },
   "devDependencies": {
-    "angular": "~1.x",
-    "angular-mocks": "~1.x"
+    "angular-route": "~1.x",
+    "angular-mocks": "~1.x",
+    "angular-sanitize": "~1.x"
   }
 }

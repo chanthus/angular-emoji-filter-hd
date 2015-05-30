@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="cts.emoji.demo">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Emoji demo</title>
+
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+
+    <script src="demo.js"></script>
+
+    <script src="../dist/emoji.min.js"></script>
+    <link href="../dist/emoji.min.css" rel="stylesheet">
+</head>
+<body ng-controller="HomeController">
+
+<div style="width: 100%; height: 50px;">
+    <div style="width: 50%; height: 100%; float: left">
+        <input style="width: 100%;" ng-model="testEmojiString">
+    </div>
+
+    <div style="width: 50%;  height: 100%; float: right">
+        <div style="margin-left: 10px" ng-bind-html="testEmojiString | emoji"></div>
+    </div>
+</div>
+
+<div style="width: 100%">
+    <div ng-bind-html="emojiHtml"></div>
+</div>
+
+<div style="width: 100%">
+    <div style="width: 25%; height: 500px; float: left">
+        <textarea style="width: 100%; height: 100%" ng-model="emojiCss"></textarea>
+    </div>
+
+    <div style="width: 25%; height: 500px; float: left">
+        <textarea style="width: 100%; height: 100%" ng-model="emojiCategories"></textarea>
+    </div>
+
+    <div style="width: 25%; height: 500px; float: left">
+        <textarea style="width: 100%; height: 100%" ng-model="emojiCodes"></textarea>
+    </div>
+
+    <div style="width: 25%; height: 500px; float: left">
+        <textarea style="width: 100%; height: 100%" ng-model="emojisMap"></textarea>
+    </div>
+</div>
+
+</body>
+</html>
