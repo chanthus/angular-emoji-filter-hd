@@ -5657,7 +5657,7 @@
             for (var i = codesKeys.length - 1; i >= 0; i--) {
 
                 if (!codesRegexCache[i]) {
-                    codesRegexCache[i] = new RegExp('(^|\\s){0,1}(' + codesKeys[i] + ')(\\s|$)', "g");
+                    codesRegexCache[i] = new RegExp('(^|\\s)?(' + codesKeys[i] + ')(\\s|$)?', "g");
                 }
 
                 var regex = codesRegexCache[i];
