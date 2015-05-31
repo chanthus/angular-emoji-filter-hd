@@ -62,7 +62,7 @@
 
                             emojiMap[emojiKey] = {
                                 'unescaped': short_name,
-                                'unicode': '\\u' + emojiDetails.unified,
+                                'unicode': emojiDetails.unified,
                                 'name': angular.lowercase(emojiDetails.name)
                             };
 
