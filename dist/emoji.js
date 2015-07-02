@@ -5649,7 +5649,7 @@
 (function (App) {
     App.filter('emojiCodeToEmoji', ["emojiCodes", function (emojiCodes) {
 
-        var emojiCodesRegex = new RegExp("([\\s]?)(" + Object.keys(emojiCodes).join("|") + ")($|\\s)", "g");
+        var emojiCodesRegex = new RegExp("(^|\\s)(" + Object.keys(emojiCodes).join("|") + ")", "g");
 
         return function (input) {
             if (input === undefined) return;
