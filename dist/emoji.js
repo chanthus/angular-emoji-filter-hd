@@ -5681,7 +5681,7 @@
             );
         };
 
-        var emojiRegex = new RegExp(":(" + Object.keys(emojiMaps).join("|") + "):", "g");
+        var emojiRegex = new RegExp("(^|\\s):(" + Object.keys(emojiMaps).join("|") + "):", "g");
 
         return function (input, replaceCode, isUnicode) {
             if (input === undefined) return;
@@ -5692,12 +5692,12 @@
             }
 
             if (isUnicode) {
-                return input.replace(emojiRegex, function (match, text) {
-                    return convertNumbers2Char(emojiMaps[App.escapeRegExp(text)].unicode);
+                return input.replace(emojiRegex, function (match, g1, g2) {
+                    return convertNumbers2Char(emojiMaps[App.escapeRegExp(g2)].unicode);
                 });
             } else {
-                return input.replace(emojiRegex, function (match, text) {
-                    return "<i class='emoji emoji_" + emojiMaps[App.escapeRegExp(text)].unescaped + "'></i>";
+                return input.replace(emojiRegex, function (match, g1, g2) {
+                    return "<i class='emoji emoji_" + emojiMaps[App.escapeRegExp(g2)].unescaped + "'></i>";
                 });
             }
         };
