@@ -5649,14 +5649,14 @@
 (function (App) {
     App.filter('emojiCodeToEmoji', ["emojiCodes", function (emojiCodes) {
 
-        var emojiCodesRegex = new RegExp("(^|\\s)?(" + Object.keys(emojiCodes).join("|") + ")(\\s|$)", "g");
+        var emojiCodesRegex = new RegExp("(^|\\s)(" + Object.keys(emojiCodes).join("|") + ")", "g");
 
         return function (input) {
             if (input === undefined) return;
             if (typeof input === "object") return input;
 
-            return input.replace(emojiCodesRegex, function (match, g1, g2, g3) {
-                return (g1 || '') + ':' + emojiCodes[App.escapeRegExp(g2)] + ':' + (g3 || '');
+            return input.replace(emojiCodesRegex, function (match, g1, g2) {
+                return (g1 || '') + ':' + emojiCodes[App.escapeRegExp(g2)] + ':';
             });
         };
     }]);
