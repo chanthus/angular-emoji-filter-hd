@@ -7,7 +7,7 @@
         $scope.emojiCategories = '';
 
         $scope.emojiHtml = '';
-        $scope.testEmojiString = 'This is a :smile: and here\'s the code version -> :)';
+        $scope.testEmojiString = 'This is a :smile: and here\'s the code version -> :) :)';
 
         var escapeRegExp = function (str) {
             return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
