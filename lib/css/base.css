@@ -18,9 +18,3 @@
         background-size: 2240px 2240px;
     }
 }
-
-@-moz-document url-prefix() {
-    .emoji {
-        background: transparent url(sheet_apple_64.png) 0 0 no-repeat;
-    }
-}
