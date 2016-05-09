@@ -1,14 +1,14 @@
 {
   "name": "angular-cts-emoji-filter-hd",
-  "version": "0.0.51",
+  "version": "0.0.52",
   "homepage": "https://github.com/chanthus/angular-emoji-filter-hd",
   "authors": [
     "Chanthu <chanthutshamsu@gmail.com>"
   ],
   "description": "An AngularJS filter for replacing emoji codes with high-definition emoticons (Retina friendly).",
   "main": [
-    "build/emoji.min.js",
-    "build/emoji.min.css"
+    "dist/emoji.js",
+    "dist/emoji.css"
   ],
   "keywords": [
     "emoji",
